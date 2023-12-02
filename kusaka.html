@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="kusaka.css">
+  <title>Моему кусаке</title>
+</head>
+<body>
+  <div class="video-container">
+
+    <div class="overlay"></div>
+
+    <video autoplay muted loop id="background-video">
+      <source src="night_scene.webm" type="video/webm">
+    </video>
+
+    <div class="content-container">
+      <div class="centered-content">
+        <div id="text-container">
+          <p id="text">Кусь</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button id="prev-btn" class="nav-button"><img src="icons/left.png" alt="Влево"></button>
+      <button id="change-text-btn" class="center-button"><img src="icons/lapa.png" alt="Лапка"></button>
+      <button id="next-btn" class="nav-button"><img src="icons/right.png" alt="Вправо"></button>
+    </div>
+
+  </div>
+
+  <script src="kusaka.js"></script>
+</body>
+</html>

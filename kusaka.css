@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Tenor+Sans|PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+    z-index: -1;
+  }
+  
+  #background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+  }
+  
+  .content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centered-content {
+    text-align: center;
+    color: whitesmoke;
+    line-height: 1;
+	font-size: 6vw;
+	font-family: 'Tenor Sans', sans-serif;
+    max-width: 70%;
+    max-height: 60%;
+  }
+
+  #text {
+    font-size: 4vh; 
+  
+    @media only screen and (max-width: 768px) {
+      #text {
+        font-size: 5vw; 
+      }
+    }
+  }
+
+  .button-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .nav-button, .center-button {
+    border: none;
+    background: none;
+  }
+  .nav-button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .center-button {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
